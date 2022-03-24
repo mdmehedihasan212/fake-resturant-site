@@ -1,0 +1,16 @@
+.meal-container{
+    height: 300px;
+    width: 210px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    font-family: 'Lato';
+}
+.meal-container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.meal-btn a{
+    text-decoration: none;
+}
