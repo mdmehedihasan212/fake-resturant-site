@@ -4,13 +4,44 @@
     border: 2px solid goldenrod;
     border-radius: 10px;
     font-family: 'Lato';
+    position: relative;
 }
 .meal-container img{
-    height: 200px;
+    height: 150px;
     width: 200px;
     border-radius: 10px;
     padding: 5px;
 }
+.meal-container img:hover, img:focus{
+    width: 95%; 
+    height: 85%;
+    position: absolute;
+}
 .meal-btn a{
     text-decoration: none;
+}
+.meal-info p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.meal-info{
+    margin: 0px 10px;
+}
+.meal-name{
+    font-size: 20px;
+}
+.buttons button{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Lato';
+    color: white;
+    background-color: goldenrod;
+    height: 30px;
+}
+.buttons button:hover{
+    color: white;
+    background-color: seagreen;
 }

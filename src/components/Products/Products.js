@@ -4,7 +4,6 @@ import './Products.css';
 
 const Products = () => {
     const [meals, setMeals] = useState([]);
-    console.log(meals);
 
     useEffect(() => {
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s`;
