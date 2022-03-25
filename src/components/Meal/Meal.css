@@ -1,7 +1,7 @@
 .meal-container{
     height: 300px;
     width: 210px;
-    border: 2px solid goldenrod;
+    border: 2px solid rgb(32, 165, 218);
     border-radius: 10px;
     font-family: 'Lato';
     position: relative;
@@ -41,10 +41,10 @@
     border: none;
     font-family: 'Lato';
     color: white;
-    background-color: goldenrod;
+    background-color: rgb(32, 165, 218);
     height: 35px;
 }
 .buttons button:hover{
     color: white;
-    background-color: seagreen;
+    background-color: goldenrod;
 }
