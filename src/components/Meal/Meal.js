@@ -1,9 +1,10 @@
 import React from 'react';
 import './Meal.css';
+import { BsCartCheck } from 'react-icons/bs';
 
-const Meal = ({ meal }) => {
-    console.log(meal);
+const Meal = ({ meal, addOrderSummary }) => {
     const { strMealThumb, strMeal, idMeal, strMeasure3 } = meal;
+
     return (
         <div className="meal-container">
             <img src={strMealThumb} alt="" />
@@ -13,7 +14,7 @@ const Meal = ({ meal }) => {
                 <p>Price: {idMeal} Tk</p>
             </div>
             <div className="buttons">
-                <button>Add to Cart</button>
+                <button onClick={() => addOrderSummary(meal)}>Add to Cart <BsCartCheck></BsCartCheck> </button>
             </div>
         </div>
     );

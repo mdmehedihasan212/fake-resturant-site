@@ -1,0 +1,7 @@
+.summary-container{
+    font-family: 'Lato';
+    position: sticky;
+    top: 15px;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+}

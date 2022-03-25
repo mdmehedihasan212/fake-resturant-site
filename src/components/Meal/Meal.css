@@ -16,6 +16,9 @@
     width: 95%; 
     height: 85%;
     position: absolute;
+    /* margin-top: -50px;
+    margin-left: -0px;
+    margin-right: -0px; */
 }
 .meal-btn a{
     text-decoration: none;
@@ -39,7 +42,7 @@
     font-family: 'Lato';
     color: white;
     background-color: goldenrod;
-    height: 30px;
+    height: 35px;
 }
 .buttons button:hover{
     color: white;

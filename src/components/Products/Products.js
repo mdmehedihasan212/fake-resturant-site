@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Meal from '../Meal/Meal';
+import OrderSummary from '../OrderSummary/OrderSummary';
 import './Products.css';
 
 const Products = () => {
     const [meals, setMeals] = useState([]);
+    const [summary, setSummary] = useState([]);
 
     useEffect(() => {
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s`;
@@ -12,15 +14,21 @@ const Products = () => {
             .then(data => setMeals(data.meals))
     }, [])
 
+    const clickAddSummary = (meal) => {
+        // console.log(meal);
+        const newSummary = [...summary, meal]
+        setSummary(newSummary)
+    }
+
     return (
         <div className="products">
             <div className="products-container">
                 {
-                    meals.map(meal => <Meal key={meal.idMeal} meal={meal}></Meal>)
+                    meals.map(meal => <Meal key={meal.idMeal} meal={meal} addOrderSummary={clickAddSummary}></Meal>)
                 }
             </div>
             <div className="order-details">
-                <h2>Order Details</h2>
+                <OrderSummary summary={summary}></OrderSummary>
             </div>
         </div>
     );
