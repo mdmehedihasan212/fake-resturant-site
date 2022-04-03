@@ -1,50 +1,56 @@
-.meal-container{
+.meal-container {
     height: 300px;
     width: 210px;
-    border: 2px solid rgb(32, 165, 218);
-    border-radius: 10px;
+    border: 1px solid lightgray;
     font-family: 'Lato';
     position: relative;
 }
-.meal-container img{
+
+.meal-container img {
     height: 150px;
     width: 200px;
     border-radius: 10px;
     padding: 5px;
 }
-.meal-container img:hover, img:focus{
-    width: 95%; 
+
+.meal-container img:hover,
+img:focus {
+    width: 95%;
     height: 85%;
     position: absolute;
     /* margin-top: -50px;
     margin-left: -0px;
     margin-right: -0px; */
 }
-.meal-btn a{
+
+.meal-btn a {
     text-decoration: none;
 }
-.meal-info p{
-    margin-top: 10px;
+
+.meal-info p {
+    margin-top: 5px;
     margin-bottom: 0px;
 }
-.meal-info{
+
+.meal-info {
     margin: 0px 10px;
 }
-.meal-name{
+
+.meal-name {
     font-size: 20px;
 }
-.buttons button{
+
+.buttons button {
     width: 100%;
     position: absolute;
     bottom: 0px;
-    border-radius: 8px;
     border: none;
     font-family: 'Lato';
-    color: white;
-    background-color: rgb(32, 165, 218);
     height: 35px;
 }
-.buttons button:hover{
+
+.buttons button:hover {
+    background-color: rgb(252, 142, 123);
     color: white;
-    background-color: goldenrod;
+    font-weight: bold;
 }
